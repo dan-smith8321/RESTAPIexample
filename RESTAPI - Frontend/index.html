@@ -12,13 +12,19 @@
     <title>Contact Manager</title>
 </head>
 
-<body>
+<body style="background-color:rgb(73, 182, 224);" >
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase"  nav style =" background-color: white" position: fixed; > <!-- the code for the start of my nav bar -->
+        <img SRC="images/Face.jpeg" STYLE= "position:absolute; align: middle; TOP:10px; right:600px; WIDTH:50px; HEIGHT:50px">
+        <data-toggle="collapse" data-target="#mobileMenu">
+        <nav<></nav>
+    
     <div class="container">
         <div class="row">
             <h1>Contact Manager</h1>
         </div>
         <div class="row">
-            <div class="col s12">
+            <div class="col s12; width:1000px;height:500px; border:2px; background-color :rgb(245, 240, 240) position: middle;">
                 <!-- Here is a form that will use the POST Http method to send data to the actoin URL  -->
                 <form action="http://localhost:3000/api/addContact" method="POST">
                     <input type="text" name="name" placeholder="Enter Name">
@@ -34,7 +40,7 @@
         </div>
         <div class="row" id="contactList"></div>
     </div>
-
+   
     <script src="js/script.js"></script>
 </body>
 
